@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 12pt;
+    color: #252525;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(../images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    background-color: #ffffffb4;
+    height: 100vh;
+    width: max(40%, 600px);
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+form {
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form div {
+    Width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form label {
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(134, 17, 56);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    box-sizing: border-box;
+    background-color: rgba(218, 150, 173, 0.795);
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid rgba(218, 150, 173, 0.795);
+    border-left: none;
+    outline: none;
+    color: rgb(59, 3, 20);
+    transition: 150ms ease;
+}
+
+form input:hover {
+    border-color: rgb(134, 17, 56);
+}
+
+/* Changing backgroung color when an input is focused */
+
+div:has(input:focus) > label {
+    background-color: rgb(59, 3, 20);
+}
+
+form input::placeholder {
+    color: rgb(59, 3, 20);
+    /* opacity here is set to one to make it darker */
+    opacity: 1;
+}
+
+form button {
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: .35em 3.5em;
+    background-color: rgba(218, 150, 173, 0.795);
+    font-family: inherit;
+    font-weight: 600px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 200ms ease;
+}
+
+form button:hover {
+    background-color: rgb(134, 17, 56);
+}
+
+p {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+a {
+    color: rgb(134, 17, 56);
+    padding-left: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 1100px){
+    .wrapper{
+        width: min(600px, 100%);
+        border-radius: 0;
+        background-color: #ffffff7e;
+    }
+}
+
+ 
